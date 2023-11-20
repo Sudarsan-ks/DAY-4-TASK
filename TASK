@@ -1,0 +1,62 @@
+//1.Iterate JSON over loops.
+
+//FOR LOOP:
+
+var Bike=[
+    {"Brand": "Yamaha"},
+    {"colour": "Blue"},
+    {"Miliage": "40"},
+    {"Model": "FZV3"},
+    {"Rate": "145000"}
+]
+for(var i=0; i<Bike.length; i++){
+        console.log(Bike[i]);
+};
+//FOR IN LOOP:
+
+var Bike={
+    "Brand": "Yamaha",
+    "colour": "Blue",
+    "Miliage": "40",
+    "Model": "FZV3",
+    "Rate": "145000"
+};
+for(var a in Bike){
+    console.log(a,Bike[a]);
+};
+
+
+//2.Create your own resume data in JSON format
+
+
+var myresume = {
+    "Basics": [{
+        "Name": "Sudarsan KS",
+        "DOB": "5-12-2000",
+        "Gender": "Male",
+        "Blood group": "A+",
+        "Father name": "K.M.Srinivasan",
+        "Mother name": "K.S.Amudha",
+        "Marital status": "Unmarried",
+        "Address": "10/30 Adhi raman nandavanm street, shevapet, salem-636002",
+        "Phone No": "8300738980",
+        "Email": "sansudar908@gmail.com"
+    }
+    ],
+    "Exprience": [{
+        "Indecomm Business services-salem": "US Mortgage process. In that i worked has a processor in document indexi ng. It means stacking the borrower documents in the given application under the document name"
+    }
+    ],
+    "Educationa qualification": [{
+        "B.com": "Government Arts college, salem-636007.(2018-2021)",
+        "HSC": "Bharathi vidyalaya matriculation higher secondary school, salem-636007.(2016-2018)",
+        "SSLC": "Sri vidya mandir school, shevapet, salem.(2016)"
+    }
+    ],
+    "skills": [{
+        "Name": "Making craft in waste material,Ms excel and Ms powerpoint,Tally ERP9"
+    }],
+    "Language": [{
+        "Known": "Tamil, English, Sourashtra"
+    }]
+}; console.log(myresume);
